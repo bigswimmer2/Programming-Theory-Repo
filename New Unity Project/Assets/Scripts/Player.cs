@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             playerRb.transform.Translate(Input.GetAxis("Vertical") * Vector3.forward * Time.deltaTime * runSpeed);
         }
