@@ -12,10 +12,14 @@ public class SoccerBall : Ball
 
     private void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.CompareTag("Player"));
+        if(other.gameObject.tag == "Player")
         {
             Kick(other);
-            Debug.Log(other.gameObject);
+            Debug.Log(other.gameObject.tag);
+        }
+        else
+        {
+            Debug.Log("Not touching");
         }
         
     }

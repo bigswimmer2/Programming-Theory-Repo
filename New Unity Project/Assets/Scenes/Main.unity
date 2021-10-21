@@ -250,7 +250,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230625611}
-  m_Material: {fileID: 13400000, guid: afbb630b97107c24bbf349dcc9343af3, type: 2}
+  m_Material: {fileID: 13400000, guid: 1aad7f9cbcf985749800f2a0cf256a92, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -934,9 +934,9 @@ GameObject:
   - component: {fileID: 1417440753}
   - component: {fileID: 1417440752}
   - component: {fileID: 1417440751}
-  - component: {fileID: 1417440750}
   - component: {fileID: 1417440749}
   - component: {fileID: 1417440754}
+  - component: {fileID: 1417440750}
   m_Layer: 0
   m_Name: Football
   m_TagString: Untagged
@@ -958,8 +958,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   kickForce: 10
---- !u!136 &1417440750
-CapsuleCollider:
+--- !u!135 &1417440750
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -968,9 +968,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
+  serializedVersion: 2
+  m_Radius: 0.55
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1417440751
 MeshRenderer:
